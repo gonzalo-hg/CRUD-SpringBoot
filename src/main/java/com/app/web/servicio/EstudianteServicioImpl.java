@@ -19,4 +19,11 @@ public class EstudianteServicioImpl implements EstudianteServicio{
 		return repositorio.findAll();
 	}
 
+	@Override
+	public Estudiante guardaEstudiante(Estudiante estudiante) {
+		
+		
+		return repositorio.save(estudiante);
+	}
+
 }
